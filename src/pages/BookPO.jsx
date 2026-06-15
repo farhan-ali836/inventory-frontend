@@ -428,6 +428,9 @@ const BookPO = () => {
                 <div className="mb-4 urdu-text">
                   <div className="font-bold text-lg text-left">To</div>
                   <div className="mt-1 text-right urdu-text" dir="rtl">
+                      <div className="text-left text-sm" dir="ltr">
+                      Date: {new Date().toLocaleDateString('en-PK', { day: '2-digit', month: '2-digit', year: 'numeric' })}
+                    </div>
                     <div>نام: {order.toName}</div>
                     <div>
                       فون نمبر: <span dir="ltr">{order.toPhone}</span>
